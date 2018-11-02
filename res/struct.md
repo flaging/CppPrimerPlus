@@ -46,8 +46,8 @@ struct test{
     bool goodTorgle : 1;  //未用
 }
 ```
-## 6.无类型的结构体
-类型为隐性，无法显示表示。
+## 6.匿名结构体
+无法显示表示其类型。
 ```C++
 struct {
     int x;
