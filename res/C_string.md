@@ -19,4 +19,13 @@ cout << strlen(str) << endl;
 cout << sizeof(str) << endl;
 ```
 输出值分别为4和2，即使空字符后面依然有字符，该字符也不显式存在的，也不会计入strlen()里。
+## 4.字符串数组的拼接和复制
+使用strcpy()和strcat()函数，但要提前处理好数组边界。
+```C++
+char str5[10] = {"Hello"};
+char str6[3] = "Hi";
+strcpy(str5,str6);  //合法
+strcat(str5,str6);  //合法
+strcpy(str6,str5);  //非法
+strcat(str6,str5);  //非法
 

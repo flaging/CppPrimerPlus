@@ -5,4 +5,5 @@
 * [cin的用法2](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/cin_2.md)
 * [数组的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/array.md)
 * [字符串的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/C_string.md)
+* [字符串对象的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/Class_string.md)
 
