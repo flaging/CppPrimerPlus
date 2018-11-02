@@ -7,5 +7,5 @@
 * [字符串的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/C_string.md)
 * [字符串类的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/Class_string.md)
 * [结构体的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/struct.md)
-* [共用体的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/union.md)
+* [联合体的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/union.md)
 

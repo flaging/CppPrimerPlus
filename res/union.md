@@ -20,7 +20,7 @@ else{
     cin >> prize.id_val.id_char;
 }
 ```
-匿名公用体用法也类似。
+匿名联合体用法也类似。
 ```C++
 struct widget{
     char band[20];
