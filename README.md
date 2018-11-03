@@ -8,4 +8,5 @@
 * [字符串类的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/Class_string.md)
 * [结构体的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/struct.md)
 * [联合体的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/union.md)
+* [枚举类型的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/enum.md)
 
