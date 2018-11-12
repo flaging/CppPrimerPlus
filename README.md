@@ -10,4 +10,6 @@
 * [枚举类型的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/enum.md)
 * [指针的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/pointer.md)
 * [向量的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/vector.md)
+## 第五章 循环和关系表达式
+* [循环的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/loop.md)
 
