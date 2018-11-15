@@ -60,5 +60,7 @@ var = ( 10, 23); //var = expression，即var = 23;
 * typedef 关键字处理
 
 ```C++
-# define byte char //将char定义为byte
+#define byte char //将char定义为byte
 typedef char byte; //同上
+```
+
