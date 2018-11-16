@@ -11,6 +11,7 @@ for( for-init-statement condition;expression){
     //循环体内容
 }
 ```
+
 在for循环里面声明变量的一个好处是，一旦出了循环，变量就自动销毁了。
 
 ## 2.while循环的格式
@@ -58,4 +59,3 @@ for(auto x : {1,2,3}){  //point 1
 }
 //point 2
 ```
-
