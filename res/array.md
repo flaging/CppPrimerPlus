@@ -69,7 +69,21 @@ int nums[4][5] ={
 };
 ```
 
-## 5.其他
+## 5.二维数组做函数参数
+
+```C++
+//作为函数参数
+void TestFun(int *pArr,int nlength);  //声明函数格式
+TestFun(iArr,6);  //错误使用方法，不能将int[2][3]转换为int **
+TestFun(&iArr[0][0],6);  //正确使用方法，将首元素地址作为参数进行传递
+
+//作为函数参数2
+void TestFun(void *pArr,int nlength);  //声明函数格式
+TestFun(iArr,6);  //正确使用方法，可以将int *转换为void *
+TestFun(&iArr[0][0],6);  //正确使用方法，将首元素地址作为参数进行传递
+```
+
+## 6.其他
 
 在STL库中，可以使用vector替代数组，可以拥有更好的特性。
 
