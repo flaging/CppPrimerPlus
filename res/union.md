@@ -1,5 +1,7 @@
 # [union]联合体用法
+
 联合体是一个特殊的数据结构，这个结构可以有多种数据类型，但在使用的时候每次只有一个数据类型。
+
 ```C++
 struct widget{
     char band[20];
@@ -20,7 +22,9 @@ else{
     cin >> prize.id_val.id_char;
 }
 ```
+
 匿名联合体用法也类似。
+
 ```C++
 struct widget{
     char band[20];
