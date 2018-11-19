@@ -177,7 +177,7 @@ while(cin)
 ```C++
 char ch;
 while(cin.get(ch)){
-    //do something 
+    //do something;
 }
 ```
 
