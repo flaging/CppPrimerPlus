@@ -41,3 +41,11 @@ strcat(str5,str6);  //合法
 strcpy(str6,str5);  //非法
 strcat(str6,str5);  //非法
 ```
+
+## 5.字符串比较
+
+```C++
+char str7[10] = "hello";
+if(str7 == "hello"){  //该处会比较两字符串地址
+    cout << "They are the same." << endl;
+}
