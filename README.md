@@ -19,3 +19,6 @@
 * [循环的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/loop.md)
 * [表达式的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/expressions.md)
 
+## 第六章 分支语句和逻辑运算符
+
+* [分支语句的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/branch.md)

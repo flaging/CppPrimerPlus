@@ -39,3 +39,4 @@ switch(interger-expression){
 
 * 通常使用value == variable来避免出现赋值语句的现象
 * 可以使用枚举类型作为switch-case的interger-expression
+* 在switch-case的过程中，需要配合break或者continue使用
