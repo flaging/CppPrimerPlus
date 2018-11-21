@@ -79,3 +79,4 @@ int sum(const int array[],int length);  //该声明说明指针指向的是常�
 ```C++
 int array[20];
 int sum(const int begin[], const int end);  //这里，可以调用sum(array,array+20)，这里的end是超尾，即尾部的后一个位置
+```
