@@ -104,3 +104,7 @@ int **pp = iArr;  //使用方式错误，不能将int[2][3]转换为int **
 int (*pArr)[3] = iArr;  //使用正确，声明一个含有三个元素的指针数组
 int temp = *(*(pArr + 1) + 2); //将6赋值给temp
 ```
+
+## 9.函数指针
+
+见[链接](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/function.md)。

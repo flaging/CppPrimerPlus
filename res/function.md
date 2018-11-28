@@ -51,7 +51,7 @@ double cube(double x){
 double volume = cube(1);
 ```
 
-### 2.函数的数组传递
+### 2.2函数的数组传递
 
 **数组中没有值传递！**
 
@@ -81,7 +81,7 @@ int array[20];
 int sum(const int begin[], const int end);  //这里，可以调用sum(array,array+20)，这里的end是超尾，即尾部的后一个位置
 ```
 
-## 3.函数的二维数组传递
+### 2.3函数的二维数组传递
 
 要注意的是，**二维数组是一个以数组指针为元素的数组**。
 
@@ -112,3 +112,97 @@ arr[x][y] = *(*(arr + x) + y);  //两者等价
 ```
 
 还可以用[取巧的方法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/array.md#5%E4%BA%8C%E7%BB%B4%E6%95%B0%E7%BB%84%E5%81%9A%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0)进行二维数组传递。
+
+### 2.4函数的结构体传递
+
+* 在使用过程中，结构体更接近于单值基本变量的使用
+* 由于结构体可以进行赋值操作，所以传参过程中可以使用结构体的值传递的方式
+* 结构体的地址要使用&+结构体名的方式获取
+* 当结构体较大时，复制操作将减慢系统运行速度，可以使用指针传递或者引用的方式提高速度
+
+### 2.5函数的字符串对象传递
+
+与结构体类似。
+
+## 3.函数的递归
+
+函数的递归是指函数自己调用自己的行为，函数的递归在一些特定编程中会有一些作用。函数递归要有一个终止递归的条件。
+
+## 4.函数的指针
+
+### 4.1函数地址的获取
+
+函数的地址就是函数名（与数组类似）。
+
+### 4.2函数指针的声明
+
+```C++
+int fun(int i);  //函数的声明
+int (*p_fun)(int);  //函数指针的声明
+int (*p_fun)(int) = fun;  //声明的同时赋值
+```
+
+而有些时候，看似不同的声明方式都可以使用同一个指针来指向。
+
+```C++
+//函数的声明
+const double fun2(const double arr[], int n);
+const double fun3(const double [], int);
+const double fun4(const double *, int);
+//函数指针的声明
+const double (*pf2)(const double arr[], int n);
+const double (*pf3)(const double [], int);
+const double (*pf4)(const double *, int);
+```
+
+以上的三种函数的好指针声明都是同一种指针。
+
+### 4.3函数指针的使用
+
+可以将(*pf)当做函数的名字使用，也可以直接使用pf作为函数名。
+
+```C++
+double double_i(int i){return 2*i};
+double (*pf5)(int) = double_i;
+//三种方法都能调用函数
+double_i(3);
+(*pf5)(3);
+pf5(3);
+```
+
+### 4.4函数指针数组
+
+声明方式如下
+
+```C++
+const double (*pf6[3])(const double *, int) = {fun2, fun3, fun4}; //声明并通过初始化表进行初始化
+```
+
+这里对函数指针所指向的函数特征作了说明，不能简单使用auto进行赋值（auto只能用于单值的初始化，不能用于列表初始化。
+但当声明了pf6后，可以使用auto再去声明相同的函数指针数组。
+
+```C++
+auto pf7 = pf6;  //pf7是指向函数指针的指针
+auto pf8 = &pf6;  //pf8是指向数组指针的指针
+```
+
+这里要注意的是**pf6是一个数组名，那么pf6和&pf6所表示的地址值相同，但pf6表示数组第一个元素的地址，&pf6表示的是指向整个数组的指针**。
+
+这里，
+
+```C++
+(*pf8)[1](arr,3);
+```
+
+才是正确的调用方式。
+
+### 4.5使用typedef进行简化
+
+可以使用typedef对数组指针的声明方式进行简化。
+
+```C++
+typedef const double *(*pf_)(const double *, int);
+pf_ pf9 = fun2;
+```
+
+可以化简程序，避免出错。
