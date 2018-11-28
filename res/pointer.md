@@ -107,4 +107,4 @@ int temp = *(*(pArr + 1) + 2); //将6赋值给temp
 
 ## 9.函数指针
 
-见[链接](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/function.md)。
+见[链接](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/function.md#4%E5%87%BD%E6%95%B0%E7%9A%84%E6%8C%87%E9%92%88)。
