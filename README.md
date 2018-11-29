@@ -28,3 +28,7 @@
 ## 第七章 函数
 
 * [函数的用法](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/function.md)
+
+## 第八章 函数探幽
+
+* [函数的用法2](https://github.com/liyupeng341/CppPrimerPlus/blob/master/res/function2.md)
